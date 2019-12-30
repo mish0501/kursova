@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void statisticsMenu(vector<Config> &configs)
+void auditMenu(vector<Config> &configs)
 {
   int choice;
 

@@ -56,7 +56,7 @@ int main()
       saleConfigMenu(configs);
       break;
     case 5:
-      statisticsMenu(configs);
+      auditMenu(configs);
       break;
     case 6:
       break;

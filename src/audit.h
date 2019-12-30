@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void statisticsMenu(vector<Config> &);
+void auditMenu(vector<Config> &);
 
 void allSelling(vector<Config> &);
 void allByProccessorAndRam(vector<Config> &);
