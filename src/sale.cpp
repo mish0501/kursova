@@ -24,6 +24,7 @@ void saleConfigMenu(vector<Config> &configs)
     cout << setw(40) << setfill(' ') << left << "| 3. Exit."
          << "|\n";
     cout << setw(41) << setfill('-') << "" << endl;
+    cout << "Please, choose an option: ";
 
     cin >> choice;
 
@@ -104,7 +105,7 @@ void saleConfigByCharacteristics(vector<Config> &configs)
     }
   }
 
-  showAllConfigs(sortedConfigs);
+  showConfigs(sortedConfigs);
 
   saleConfigBySerialNum(configs);
 }

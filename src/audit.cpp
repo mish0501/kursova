@@ -26,6 +26,7 @@ void auditMenu(vector<Config> &configs)
     cout << setw(57) << setfill(' ') << left << "| 4. Back."
          << "|\n";
     cout << setw(58) << setfill('-') << "" << endl;
+    cout << "Please, choose an option: ";
 
     cin >> choice;
 
@@ -81,7 +82,7 @@ void allSelling(vector<Config> &configs)
       break;
   }
 
-  showAllConfigs(sellingConfigs);
+  showConfigs(sellingConfigs);
 }
 
 void allByProccessorAndRam(vector<Config> &configs)
@@ -127,8 +128,9 @@ void allByProccessorAndRam(vector<Config> &configs)
       break;
   }
 
-  showAllConfigs(configsToSort);
+  showConfigs(configsToSort);
 }
+
 void allSold(vector<Config> &configs)
 {
 
@@ -164,5 +166,5 @@ void allSold(vector<Config> &configs)
       break;
   }
 
-  showAllConfigs(soldConfigs);
+  showConfigs(soldConfigs);
 }

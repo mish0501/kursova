@@ -62,6 +62,7 @@ void editConfig(vector<Config> &configs)
         cout << setw(40) << setfill(' ') << left << "| 9. Back."
              << "|\n";
         cout << setw(41) << setfill('-') << "" << endl;
+        cout << "Please, choose an option: ";
 
         cin >> choice;
 
@@ -140,5 +141,7 @@ void editConfig(vector<Config> &configs)
   else
   {
     cout << "No config found with that serial number.\n\n";
+
+    system("pause");
   }
 }

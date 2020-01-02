@@ -4,4 +4,4 @@
 
 using namespace std;
 
-void showAllConfigs(vector<Config> configs);
+void showConfigs(vector<Config> configs);

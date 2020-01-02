@@ -38,6 +38,7 @@ int main()
     cout << setw(40) << setfill(' ') << left << "| 6. Exit."
          << "|\n";
     cout << setw(41) << setfill('-') << "" << endl;
+    cout << "Please, choose an option: ";
 
     cin >> choice;
 
@@ -47,7 +48,7 @@ int main()
       addConfigMenu(configs);
       break;
     case 2:
-      showAllConfigs(configs);
+      showConfigs(configs);
       break;
     case 3:
       editConfig(configs);

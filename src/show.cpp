@@ -22,7 +22,7 @@ ostream &operator<<(ostream &out, const Config::Status &x)
   return out;
 }
 
-void showAllConfigs(vector<Config> configs)
+void showConfigs(vector<Config> configs)
 {
   int len = configs.size();
 

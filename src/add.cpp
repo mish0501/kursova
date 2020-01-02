@@ -25,6 +25,7 @@ void addConfigMenu(vector<Config> &configs)
     cout << setw(40) << setfill(' ') << left << "| 3. Back."
          << "|\n";
     cout << setw(41) << setfill('-') << "" << endl;
+    cout << "Please, choose an option: ";
 
     cin >> choice;
 
