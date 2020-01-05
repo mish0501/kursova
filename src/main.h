@@ -5,5 +5,3 @@
 #include "sale.h"
 #include "audit.h"
 #include "files.h"
-
-#define configsCount 3

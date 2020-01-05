@@ -59,37 +59,43 @@ void addConfig(vector<Config> &configs, bool many)
     cout << "There is/are " << len << " config(s).\n";
   }
 
-  if (many)
+  if (len == configsCount)
   {
-
-    int num;
-    cout << "Input the number of configs you are going to add: ";
-    cin >> num;
-
-    do
-    {
-      char choice;
-      add(configs);
-      num--;
-      cout << "\nSuccessfully added a config.\n";
-
-      if (num > 0)
-      {
-        cout << "Do you want to continue?(y/n) ";
-        cin >> choice;
-
-        if (choice == 'n')
-          break;
-      }
-
-    } while (num > 0);
+    cout << "You can't add more than 100 configs";
   }
   else
   {
-    add(configs);
-    cout << "\nSuccessfully added a config.\n\n";
-  }
+    if (many)
+    {
 
+      int num;
+      cout << "Input the number of configs you are going to add: ";
+      cin >> num;
+
+      do
+      {
+        char choice;
+        add(configs);
+        num--;
+        cout << "\nSuccessfully added a config.\n";
+
+        if (num > 0)
+        {
+          cout << "Do you want to continue?(y/n) ";
+          cin >> choice;
+
+          if (choice == 'n')
+            break;
+        }
+
+      } while (num > 0);
+    }
+    else
+    {
+      add(configs);
+      cout << "\nSuccessfully added a config.\n\n";
+    }
+  }
   system("pause");
 }
 

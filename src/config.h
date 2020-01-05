@@ -2,6 +2,8 @@
 #define Config_H
 #include <string>
 
+#define configsCount 100
+
 struct Processor
 {
   std::string manufacturer, model;
