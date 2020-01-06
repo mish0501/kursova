@@ -69,7 +69,7 @@ void saleConfigBySerialNum(vector<Config> &configs)
 
     if (!config.status)
     {
-      cout << "The config is sold.";
+      cout << "The config is sold.\n";
     }
     else
     {
@@ -77,7 +77,7 @@ void saleConfigBySerialNum(vector<Config> &configs)
 
       replace(configs.begin(), configs.end(), configs[index], config);
 
-      cout << "The config was sold successfuly.";
+      cout << "The config was sold successfuly.\n";
     }
   }
 }
